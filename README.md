@@ -24,4 +24,18 @@
          2. Elbow Method
      
          3. Information Criterion Approach
+
+  2. 중심점(Centroid) 설정 :
+
+       k개의 군집을 설정 했으면 k개의 중심점을 설정해야 함
+
+       초기 중심점도 군집의 개수와 같이 어떤 값을 선택하는가에 따라 성능이 크게 달라져
+       마찬가지로 몇가지 방법론이 존재
      
+         1. Randomly select
+     
+         2. Manually assign
+     
+         3. K-means++
+     
+       실제로 자주 사용되는 초기값 설정 방법은 K-means++
