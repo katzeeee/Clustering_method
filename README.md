@@ -18,6 +18,10 @@
 
        군집의 개수를 어떻게 정하냐에 따라 결과가 크게 달라져 군집의 개수를 정하는
        방법론으로 몇 가지 방법들이 존재한다고 함
+     
          1. Rule of Thumb
+     
          2. Elbow Method
+     
          3. Information Criterion Approach
+     
