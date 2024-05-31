@@ -102,6 +102,8 @@
 
 ### Gaussian Mixture Model
 - K-Means는 특정 중심점을 기반으로 거리적으로 퍼져있는 데이터 세트에 군집화를 적용하면 효율적인데 그 반대는 비효율적임
+
+
 ![Untitled (8)](https://github.com/katzeeee/Clustering_method/assets/104491909/a6ef0a8f-58aa-4bea-9495-d9317fb33668)
 
 - 위 사진과 같은 데이터 분포를 K-Means로 clustering하면 제대로 clustering이 안되는 것을 확인했고 GMM 알고리즘은 문제 없이 잘 수행하는 것을 확인
