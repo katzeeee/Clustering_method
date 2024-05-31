@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import os
 
 
-raw_data = pd.read_csv('/content/drive/MyDrive/Mall_Customers.csv',encoding='utf-8', engine = 'python')
+raw_data = pd.read_csv("https://raw.githubusercontent.com/katzeeee/Clustering_method/main/Mall_Customers.csv",encoding='utf-8', engine = 'python')
 Customers_data = raw_data[['Gender','Age','Annual Income (k$)','Spending Score (1-100)']].to_numpy()    # x 데이터 받기
 for i in range(len(Customers_data)): #남성,여성을 숫자로 생각할 수 있게
     if Customers_data[i][0] =='Male':
