@@ -3,6 +3,7 @@ from sklearn.datasets import make_blobs
 from sklearn.cluster import MeanShift
 from sklearn.cluster import estimate_bandwidth
 import pandas as pd
+import matplotlib.pyplot as plt
 
 def visualize_cluster_plot(clusterobj, dataframe, label_name, iscenter=True):
     if iscenter :
