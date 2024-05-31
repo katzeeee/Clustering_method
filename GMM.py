@@ -1,6 +1,7 @@
 from sklearn.mixture import GaussianMixture
 from sklearn.datasets import load_iris
 from sklearn.cluster import KMeans
+from sklearn.datasets import make_blobs
 
 import matplotlib.pyplot as plt
 import numpy as np
