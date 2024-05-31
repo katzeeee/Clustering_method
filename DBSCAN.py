@@ -1,4 +1,8 @@
 from sklearn.datasets import make_circles
+from sklearn.cluster import DBSCAN
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 def visualize_cluster_plot(clusterobj, dataframe, label_name, iscenter=True):
     if iscenter :
@@ -39,7 +43,6 @@ clusterDF['target'] = y
 
 visualize_cluster_plot(None, clusterDF, 'target', iscenter=False)
 
-from sklearn.cluster import DBSCAN
 
 dbscan = DBSCAN(eps=0.2, min_samples=10, metric='euclidean')
 dbscan_labels = dbscan.fit_predict(X)
