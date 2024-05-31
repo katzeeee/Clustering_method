@@ -53,8 +53,6 @@ meanshift= MeanShift(bandwidth = best_bandwidth)
 cluster_labels = meanshift.fit_predict(X)
 print('cluster labels 유형:',np.unique(cluster_labels))
 
-import matplotlib.pyplot as plt
-
 clusterDF['meanshift_label']  = cluster_labels
 centers = meanshift.cluster_centers_
 unique_labels = np.unique(cluster_labels)
