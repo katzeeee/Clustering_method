@@ -54,6 +54,7 @@
 
 
 
+
 ### DBSCAN(Density Based Spatial Clustering of Applications with Noise)
 - 거리 개념이 아닌 데이터의 밀도 차이를 파악하는 밀도 기반 클러스터링 기법
 
@@ -71,4 +72,25 @@
 - epsilon, min_samples를 하이퍼 파라미터로 가짐
   - epsilon : 개별 데이터를 중심으로 입실론 반경의 원형의 영역을 가짐. 즉 원의 반지름
   - min_samples : 원형의 영역 안에 min_samples 이상의 데이터가 포함되면 핵심 포인트
-     
+
+
+
+
+### Mean Shift Clustering
+
+- K-means는 중심점이 데이터간 거리의 평균점으로 이동을 하지만, Mean-Shift는 중심점을 데이터가 가장 많이 모여 있는곳, 즉 밀도가 가장 높은 곳으로 이동
+
+- 특징:
+  - KDE (Kernel Density Estimation)로 확률 밀도 함수를 찾음
+  - KDE를 이용하여 데이터 포인트들이 데이터 분포가 높은 곳으로 이동하면서 군집화를 수행
+  - 별도의 군집화 개수를 지정하지 않고, 데이터 분포도에 기반하여 자동으로 군집 개수 선정
+
+- 군집화 순
+  - 핵심 포인트 (Core Point): 주변 영역 내에 최소 데이터 개수 이상의 타 데이터를 가지고 있을 경우 해당 데이터
+  - 이웃 포인트 (Neighbor Point): 주변 영역 내에 위치한 타 데이터
+  - 경계 포인트 (Border Point): 주변 영역 내에 최소 데이터 개수 이상의 이웃 포인트를 가지고 있지 않지만, 핵심 포인트를 이웃 포인트로 가지고 있는 데이터
+  - 잡음 포인트 (Noise Point): 최소 데이터 개수 이상의 이웃 포인트를 가지고 있지 않으며, 핵심 포인트도 이웃 포인트로 가지고 있지 않는 데이터
+ 
+- epsilon, min_samples를 하이퍼 파라미터로 가짐
+  - epsilon : 개별 데이터를 중심으로 입실론 반경의 원형의 영역을 가짐. 즉 원의 반지름
+  - min_samples : 원형의 영역 안에 min_samples 이상의 데이터가 포함되면 핵심 포인트
